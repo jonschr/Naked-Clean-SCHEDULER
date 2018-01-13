@@ -12,5 +12,8 @@ There are a number of minor HTML changes that will be needed to make everything 
 
 Basically what it sounds like – instead of using the labels for inputs, we'll want to use placeholders instead. If these aren't familiar to you, you should be able to see how it works on the sample site. Basically it's just this:
 
+```
 <input praceholder="This is a placeholder"/>
+```
+
 

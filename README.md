@@ -32,3 +32,9 @@ So it should look something like this in terms of structure:
   {{{ all of the fields from this section }}}
 </fieldset>
 ```
+
+### Minor adjustments
+
+These are just a few bullet points of some really specific things:
+- Remove the "display:block" from the total price, as we'll want that on the same line
+- Let's add a class of 'price-total' to that same total price div, so that we can style that

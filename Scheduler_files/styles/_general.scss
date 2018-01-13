@@ -75,17 +75,62 @@ form fieldset {
     }
 
     p,
-    .form-label {
+    .form-label,
+    .capHours {
         color: rgb(171, 171, 171);
         display: block;
         font-size: 14px;
         line-height: 19.4445px;
     }
 
+    .capHours {
+        padding-top: 5px;
+    }
+
     .form-label {
         margin-bottom: 5px;
         color: rgb(58, 60, 65);
     }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+/* ==========================================================================
+   Form columns
+   ========================================================================== */
+
+.main_left {
+    display: inline-block;
+    width: 48%;
+    margin-right: 3%;
+
+    @include mobile {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.main_right {
+    display: inline-block;
+    width: 48%;
+    margin-left: auto;
+
+    @include mobile {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* ==========================================================================
+   CVV
+   ========================================================================== */
+
+.cvv {
+    margin-right: 15px;
 }
 
 /* ==========================================================================
@@ -98,7 +143,54 @@ input {
     font-weight: 300;
     color: #3a3c41;
     height: 45px;
-    width: 100%;
+    width: 100% !important;
     font-size: 16px;
     display: block;
+}
+
+select {
+    height: 45px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3a3c41;
+    width: 100% !important;
+
+    &.autowidth {
+        width: auto !important;
+    }
+}
+
+/* ==========================================================================
+   Required
+   ========================================================================== */
+
+.req {
+    color: #c12727;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+input.extraBtn,
+input.cleanTypeBtn {
+    background-color: $green2;
+    border: 1px solid $green3;
+    margin-right: 4px;
+    transition: .5s all;
+    border: none;
+
+    // width: 100% !important;
+    // max-width: 84px;
+    width: 84px !important;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &.extra_selected,
+    &.cleanType_selected,
+    &:hover {
+        background-color: $green3;
+    }
 }

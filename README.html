@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="notesfortammyonthechangesimmaking">Notes for Tammy on the changes I&#8217;m making</h1>
+
+<p>Tammy, I&#8217;m trying to keep these things as simple as possible. Hopefully they won&#8217;t be too too tricky, but there are going to be some html changes needed.</p>
+
+<h2 id="css">CSS</h2>
+
+<p>You should be able to just include the scheduler-style.css file from this repo, and that&#8217;ll include all of the styles. It&#8217;s precompressed and all of that; the source SASS files are here too, but this is really the only file you actually need.</p>
+
+<pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../yourpath/scheduler-style.css&quot;&gt;
+</code></pre>
+
+<h2 id="html">HTML</h2>
+
+<p>There are a number of minor HTML changes that will be needed to make everything look the way it does on the sample site. Essentially, I&#8217;ve tried to break it down into small tasks.</p>
+
+<h3 id="droplabelsuseplaceholdersinstead">Drop labels, use placeholders instead</h3>
+
+<p>Basically what it sounds like – instead of using the labels (or divs with a <strong>form-label</strong> class) for inputs, we&#8217;ll want to use placeholders instead. If these aren&#8217;t familiar to you, you should be able to see how it works on the sample site. Basically it&#8217;s just this:</p>
+
+<pre><code class="html">&lt;input placeholder=&quot;This is a placeholder&quot;/&gt;
+</code></pre>
+
+<h3 id="sectionheadings">Section headings</h3>
+
+<p>Put section headings on the <em>inside</em> of each fieldset instead of the outside, and wrap each one with an h2 tag instead of the current div class of form-main.</p>
+
+<p>So it should look something like this in terms of structure:</p>
+
+<pre><code class="html">&lt;fieldset&gt;
+  &lt;h2&gt;This is a heading&lt;/h2&gt;
+  &lt;p&gt;Subheading type thing if necessary&lt;/p&gt;
+  {{{ all of the fields from this section }}}
+&lt;/fieldset&gt;
+</code></pre>
+
+<h3 id="minoradjustments">Minor adjustments</h3>
+
+<p>These are just a few bullet points of some really specific things:</p>
+
+<ul>
+<li>Remove the &#8220;display:block&#8221; from the total price, as we&#8217;ll want that on the same line</li>
+<li>Let&#8217;s add a class of &#8216;price-total&#8217; to that same total price div, so that we can style that</li>
+<li>There are a few <br> tags that need to be removed in the html</li>
+<li>The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of &#8220;autowidth&#8221; to those, they&#8217;ll act appropriately.</li>
+</ul>
+
+</body>
+</html>
+

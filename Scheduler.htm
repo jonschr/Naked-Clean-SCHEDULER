@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" class="gr__68_15_38_40">
 
 <head>
-  <link rel="stylesheet" href="Scheduler_files/styles/scheduler-style.css">
+  <link rel="stylesheet" href="./Scheduler_files/styles/scheduler-style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
         Scheduler
@@ -123,8 +123,6 @@
                                         <span id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_RadAjaxManager3" style="display:none;"></span>
                                     </div>
                                     <div id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_RadAjaxLoadingPanel1" style="display:none;">
-                                        <br>
-                                        <br>
                                         <span class="BookLoadingPanel_Cal"><label><img src="./Scheduler_files/busyBlue.gif" border="0" alt="" style=""></label></span>
                                     </div>
                                     <div id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_RadAjaxLoadingPanel2" style="display:none;">
@@ -214,10 +212,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="main_right">
-                                                    <div class="form-label">City <span class="req">*</span></div>
                                                     <div class="form-control-group">
                                                         <div id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_txtCityPanel" style="display: block;">
-                                                            <input name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$txtCity" maxlength="100" id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_txtCity" class="form-control contact-info" type="text">
+                                                            <input name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$txtCity" placeholder="City" maxlength="100" id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_txtCity" class="form-control contact-info" type="text">
                                                         </div>
                                                         <span id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_RequiredFieldValidator6" class="req" style="color:Red;visibility:hidden;">Required</span>
                                                     </div>
@@ -233,6 +230,7 @@
                                         <div class="form-group">
                                             <div class="form-label">How many rooms do you have?</div>
                                             <div class="form-control-group">
+                                              <div class="main_left">
                                                 <div id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddNumBedroomsPanel" style="display: block;">
                                                     <select name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddNumBedrooms" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddNumBedrooms\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddNumBedrooms" class="form-control">
                                                         <option value="0">0 Bedrooms</option>
@@ -243,6 +241,8 @@
                                                         <option value="5+">5+ Bedrooms</option>
                                                     </select>
                                                 </div>
+                                                </div>
+                                                <div class="main_right">
                                                 <div id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddNumBathroomsPanel" style="display: block;">
                                                     <select name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddNumBathrooms" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddNumBathrooms\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddNumBathrooms" class="form-control">
                                                         <option value="0">0 Bathroom</option>
@@ -252,6 +252,7 @@
                                                         <option value="4">4 Bathrooms</option>
                                                         <option value="5+">5+ Bathrooms</option>
                                                     </select>
+                                                </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,7 +329,7 @@
                                             <div class="form-label">How many hours would you ilke to cap the cleaning at?</div>
                                             <div class="form-control-group">
                                                 <div id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddCapHoursPanel" style="display: block;">
-                                                    <select name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddCapHours" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddCapHours\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddCapHours" class="form-control caphours">
+                                                    <select class="autowidth" name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddCapHours" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddCapHours\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddCapHours" class="form-control caphours">
                                                         <option value="2.0">2.0</option>
                                                         <option value="3.0">3.0</option>
                                                         <option value="4.0">4.0</option>
@@ -413,12 +414,7 @@
         </div>
 
 </div>
-   <br>
-   <br>
     <input type="button " name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$btnGetMoreDates " value="Get More Date Selections " onclick="javascript:__doPostBack(&#39;ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$btnGetMoreDates&#39;,&#39;&#39;) " id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnGetMoreDates " class="buttonStyle " style="width:250px;text-align:center; ">
-
-   <br>
-   <br>
         
          </div>
           </div>
@@ -443,9 +439,9 @@
         </div>
     </div>
     <div class="form-group ">
-        <div style="width:150px;float:left; ">
+        <div style="width:150px;float:left;margin-right:15px; ">
             <div class="form-label " style="width:150px; ">CVV<span class="req ">*</span></div>
-            <div class="form-control-group " style="width:150px; ">
+            <div class="form-control-group cvv" style="width:150px;">
                 <input name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$txtCvv " id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_txtCvv " class="form-control contact-info " type="text " style="width:80px; ">           
                 <span id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_RequiredFieldValidator9 " class="req " style="color:Red;visibility:hidden; ">Required</span>
             </div>
@@ -453,7 +449,7 @@
         <div style="width:300px;float:left; ">
               <div class="form-label " style="width:300px; ">Expiration Date</div>
               <div class="form-control-group " style="width:300px; ">
-                 <select name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddMonth " id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddMonth " class="form-control ddReferral " style="width:60px; ">
+                 <select class="autowidth" name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddMonth " id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddMonth " class="form-control ddReferral " style="width:60px; ">
     <option selected="selected " value="01 ">01</option>
     <option value="02 ">02</option>
     <option value="03 ">03</option>
@@ -468,7 +464,7 @@
     <option value="12 ">12</option>
 
 </select>
-                 <select name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddYear " id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddYear " class="form-control ddReferral " style="width:80px; ">
+                 <select class="autowidth"  name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$ddYear " id="ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ddYear " class="form-control ddReferral " style="width:80px; ">
     <option selected="selected " value="17 ">2017</option>
     <option value="18 ">2018</option>
     <option value="19 ">2019</option>
@@ -491,7 +487,6 @@
          </div>
     </div>
  </fieldset>
-<br><br>
 
 <div class="sidebar " id="divTotalSidebar ">
 
@@ -511,8 +506,6 @@
 </div>
 </div>
 
-
-<br><br>
 <input type="submit " name="ctl00$ctl00$cphContent$cphPgContent$btnBookCleaning " value="GO BACK " onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cphContent$cphPgContent$btnBookCleaning&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Book.aspx&quot;, false, false)) " id="ctl00_ctl00_cphContent_cphPgContent_btnBookCleaning " class="buttonStyle " style="width:250px; ">
  
 
@@ -658,7 +651,7 @@ document.getElementById('ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_Requi
 </form>
                         </div>  <!-- main_outer -->
                         <!-- NOTE TO TAMMY: ADD THIS SIDEBAR DIV WITH EVERYTHING INSIDE IT TO THE LAYOUT JUST AFTER THE CLOSE OF THE MAIN_OUTER DIV -->
-                        <div id="sidebar ">
+                        <div id="sidebar">
                             <div class="widget ">
                                 <h3 class="widget-title ">Heading Three</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>

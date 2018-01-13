@@ -39,4 +39,5 @@ These are just a few bullet points of some really specific things:
 - Remove the "display:block" from the total price, as we'll want that on the same line
 - Let's add a class of 'price-total' to that same total price div, so that we can style that
 - There are a few <br> tags that need to be removed in the html
+- The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of "autowidth" to those, they'll act appropriately.
 

@@ -74,11 +74,17 @@ form fieldset {
         color: black;
     }
 
-    p {
+    p,
+    .form-label {
         color: rgb(171, 171, 171);
         display: block;
         font-size: 14px;
         line-height: 19.4445px;
+    }
+
+    .form-label {
+        margin-bottom: 5px;
+        color: rgb(58, 60, 65);
     }
 }
 
@@ -92,6 +98,7 @@ input {
     font-weight: 300;
     color: #3a3c41;
     height: 45px;
-    max-width: 340px;
+    width: 100%;
     font-size: 16px;
+    display: block;
 }

@@ -14,7 +14,7 @@ There are a number of minor HTML changes that will be needed to make everything 
 
 ### Drop labels, use placeholders instead
 
-Basically what it sounds like – instead of using the labels (or divs with a #form-label# class) for inputs, we'll want to use placeholders instead. If these aren't familiar to you, you should be able to see how it works on the sample site. Basically it's just this:
+Basically what it sounds like – instead of using the labels (or divs with a **form-label** class) for inputs, we'll want to use placeholders instead. If these aren't familiar to you, you should be able to see how it works on the sample site. Basically it's just this:
 
 ```html
 <input placeholder="This is a placeholder"/>

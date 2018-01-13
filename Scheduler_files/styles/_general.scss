@@ -1,5 +1,6 @@
 body {
     background: $green1;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 /* ==========================================================================
@@ -7,6 +8,8 @@ body {
    ========================================================================== */
 
 #main-area {
+    padding: 20px 0;
+
     > .container {
         max-width: 935px;
         margin-left: auto;
@@ -38,5 +41,57 @@ form {
     fieldset {
         padding: 40px;
         border-bottom: 1px solid #dedede;
+
+        .intro {
+            margin-bottom: 15px;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            *:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
+}
+
+/* ==========================================================================
+   Basic fonts and styles
+   ========================================================================== */
+
+form fieldset {
+    h2 {
+        color: rgb(58, 60, 65);
+        display: block;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 24.9999px;
+        color: black;
+    }
+
+    p {
+        color: rgb(171, 171, 171);
+        display: block;
+        font-size: 14px;
+        line-height: 19.4445px;
+    }
+}
+
+/* ==========================================================================
+   Field styles
+   ========================================================================== */
+
+input {
+    border: 1px solid #c6c6c7;
+    padding: 0 15px;
+    font-weight: 300;
+    color: #3a3c41;
+    height: 45px;
+    max-width: 340px;
+    font-size: 16px;
 }

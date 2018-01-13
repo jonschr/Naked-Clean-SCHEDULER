@@ -1,5 +1,5 @@
 body {
-    background: $green1;
+    background: $blue1;
     font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -176,8 +176,8 @@ select {
 
 input.extraBtn,
 input.cleanTypeBtn {
-    background-color: $green2;
-    border: 1px solid $green3;
+    background-color: $blue2;
+    border: 1px solid $blue3;
     margin-right: 4px;
     transition: .5s all;
     border: none;
@@ -191,6 +191,6 @@ input.cleanTypeBtn {
     &.extra_selected,
     &.cleanType_selected,
     &:hover {
-        background-color: $green3;
+        background-color: $blue3;
     }
 }

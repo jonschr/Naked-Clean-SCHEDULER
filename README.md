@@ -14,7 +14,7 @@ There are a number of minor HTML changes that will be needed to make everything 
 
 ### Drop labels, use placeholders instead
 
-Basically what it sounds like – instead of using the labels for inputs, we'll want to use placeholders instead. If these aren't familiar to you, you should be able to see how it works on the sample site. Basically it's just this:
+Basically what it sounds like – instead of using the labels (or divs with a *form-label* class) for inputs, we'll want to use placeholders instead. If these aren't familiar to you, you should be able to see how it works on the sample site. Basically it's just this:
 
 ```html
 <input placeholder="This is a placeholder"/>
@@ -38,3 +38,5 @@ So it should look something like this in terms of structure:
 These are just a few bullet points of some really specific things:
 - Remove the "display:block" from the total price, as we'll want that on the same line
 - Let's add a class of 'price-total' to that same total price div, so that we can style that
+- There are a few <br> tags that need to be removed in the html
+

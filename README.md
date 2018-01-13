@@ -27,17 +27,20 @@ So it should look something like this in terms of structure:
 
 ```html
 <fieldset>
-  <h2>This is a heading</h2>
-  <p>Subheading type thing if necessary</p>
-  {{{ all of the fields from this section }}}
+	<div class="intro">
+		<h2>This is a heading</h2>
+		<p>Subheading type thing if necessary</p>
+	</div>
+	
+	{{{ all of the fields from this section }}}
+
 </fieldset>
 ```
 
 ### Minor adjustments
 
 These are just a few bullet points of some really specific things:
-- Remove the "display:block" from the total price, as we'll want that on the same line
-- Let's add a class of 'price-total' to that same total price div, so that we can style that
-- There are a few <br> tags that need to be removed in the html
-- The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of "autowidth" to those, they'll act appropriately.
+- There are a few <br> tags that need to be removed in the html; I don't think any of those will need to remain
+- The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of "autowidth" to those select fields, they'll act appropriately.
+- On the wrapper around the CVV entry (it has width:150px;float:left; on there already), add "margin-right: 15px;"
 

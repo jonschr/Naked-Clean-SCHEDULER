@@ -34,9 +34,13 @@
 <p>So it should look something like this in terms of structure:</p>
 
 <pre><code class="html">&lt;fieldset&gt;
-  &lt;h2&gt;This is a heading&lt;/h2&gt;
-  &lt;p&gt;Subheading type thing if necessary&lt;/p&gt;
-  {{{ all of the fields from this section }}}
+	&lt;div class=&quot;intro&quot;&gt;
+		&lt;h2&gt;This is a heading&lt;/h2&gt;
+		&lt;p&gt;Subheading type thing if necessary&lt;/p&gt;
+	&lt;/div&gt;
+	
+	{{{ all of the fields from this section }}}
+
 &lt;/fieldset&gt;
 </code></pre>
 
@@ -45,10 +49,9 @@
 <p>These are just a few bullet points of some really specific things:</p>
 
 <ul>
-<li>Remove the &#8220;display:block&#8221; from the total price, as we&#8217;ll want that on the same line</li>
-<li>Let&#8217;s add a class of &#8216;price-total&#8217; to that same total price div, so that we can style that</li>
-<li>There are a few <br> tags that need to be removed in the html</li>
-<li>The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of &#8220;autowidth&#8221; to those, they&#8217;ll act appropriately.</li>
+<li>There are a few <br> tags that need to be removed in the html; I don&#8217;t think any of those will need to remain</li>
+<li>The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of &#8220;autowidth&#8221; to those select fields, they&#8217;ll act appropriately.</li>
+<li>On the wrapper around the CVV entry (it has width:150px;float:left; on there already), add &#8220;margin-right: 15px;&#8221;</li>
 </ul>
 
 </body>

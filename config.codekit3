@@ -9,20 +9,6 @@
 	],
 "creatorBuild": "26148",
 "files": {
-	"\/naked-clean-scheduler.sublime-project": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/naked-clean-scheduler.sublime-project",
-		"oF": 0
-		},
-	"\/naked-clean-scheduler.sublime-workspace": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/naked-clean-scheduler.sublime-workspace",
-		"oF": 0
-		},
 	"\/Scheduler.htm": {
 		"cB": 0,
 		"ft": 8192,
@@ -183,6 +169,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/Scheduler_files\/styles\/_sidebar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scheduler_files\/css\/_sidebar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/Scheduler_files\/styles\/scheduler-style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -270,7 +269,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 534988835,
-	"displayValue": "Naked Clean SCHEDULER",
+	"displayValue": "Naked-Clean-SCHEDULER",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ceiling"
 	},
@@ -1662,7 +1661,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "file:\/\/\/Users\/jonschroeder\/Documents\/Websites\/Naked%20Clean%20SCHEDULER\/Scheduler.htm",
+	"externalServerAddress": "https:\/\/naked-clean.dev",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2246,7 +2245,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 1,
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

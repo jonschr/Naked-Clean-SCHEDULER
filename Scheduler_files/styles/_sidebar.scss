@@ -1,0 +1,33 @@
+#sidebar {
+    background: white;
+    border-radius: 3px;
+    padding: 25px 0;
+
+    .widget {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 24.9999px;
+            text-transform: uppercase;
+            color: #3a3c41;
+            margin-bottom: 13px;
+        }
+
+        p {
+            color: rgb(133, 135, 140);
+            display: block;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}

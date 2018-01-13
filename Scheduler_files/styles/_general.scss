@@ -1,0 +1,42 @@
+body {
+    background: $green1;
+}
+
+/* ==========================================================================
+   Main wrapper
+   ========================================================================== */
+
+#main-area {
+    > .container {
+        max-width: 935px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: flex-start;
+
+        #main_outer {
+            background: white;
+            flex: 0 1 auto;
+            width: 65%;
+            margin-right: auto;
+            border-radius: 3px;
+        }
+
+        #sidebar {
+            flex: 0 1 auto;
+            width: 32%;
+            margin-left: auto;
+        }
+    }
+}
+
+/* ==========================================================================
+   Form wrappers
+   ========================================================================== */
+
+form {
+    fieldset {
+        padding: 40px;
+        border-bottom: 1px solid #dedede;
+    }
+}

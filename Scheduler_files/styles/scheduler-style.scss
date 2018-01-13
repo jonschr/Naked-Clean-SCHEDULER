@@ -2,13 +2,30 @@
    Color selectino
    ========================================================================== */
 
-$mobile-width-section: 767px;
-$tablet-width-section: 768px;
-$desktop-width-section: 1200px;
+$green1: #f0f7ed;
+$green2: #d5ecd7;
+$green3: #aed9b1;
+$green4: #81c185;
+$blue1: #edf7f4;
+$blue2: #bee1de;
+$blue3: #74c0b9;
+$blue4: #398e93;
+$dark1: #d2d6d6;
+$dark2: #70767c;
+$dark3: #555c63;
+$dark4: #3c434a;
+$highlight: #9add8a;
+
+$light: $blue1;
+$primary: $blue3;
 
 /* ==========================================================================
    Responsive default mixins
    ========================================================================== */
+
+$mobile-width-section: 767px;
+$tablet-width-section: 768px;
+$desktop-width-section: 1200px;
 
 @mixin mobile {
     @media (max-width: #{$mobile-width-section}) {
@@ -49,7 +66,4 @@ $desktop-width-section: 1200px;
 @import "fields-standard";
 @import "calendar";
 @import "extras";
-
-* {
-    color: orange !important;
-}
+@import "sidebar";

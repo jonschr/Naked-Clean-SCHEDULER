@@ -3,7 +3,7 @@
 This is a punchlist of the things that I see that need changed in terms of markup. Should be a quicker list than last time.
 
 ## Update the main stylesheet
-There's a [new version](https://github.com/redblueconcepts/Naked-Clean-SCHEDULER/blob/master/Scheduler_files/styles/scheduler-style.scss) to replace the current one.
+There's a [new version of scheduler-style.css](https://github.com/redblueconcepts/Naked-Clean-SCHEDULER/blob/master/Scheduler_files/styles/scheduler-style.css) to replace the current one.
 
 ## Add the images in the /images directory to *your* /images directory
 This includes the logo for display at the top of the page, along with the header background image.

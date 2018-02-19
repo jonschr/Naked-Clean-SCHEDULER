@@ -2,6 +2,9 @@
 
 This is a punchlist of the things that I see that need changed in terms of markup. Should be a quicker list than last time.
 
+## Update the main stylesheet
+There's a new version to replace the current one.
+
 ## Add the header markup
 This can be added just inside the opening <body> tag, if you like.
 
@@ -55,6 +58,10 @@ This goes just after the close of the main_outer div
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
+
+## Remove the two <br> tags above the total
+
+There are a couple of <br> tags that appear just above the <fieldset> which contains the total price. We should remove those, as they add spacing that's inconsistent with the rest of the document.
 
 ## Update the markup of the unavailable/available legend just above the calendar
 Here's what it should probably look like (please note that this is considerably simpler than what's there now:

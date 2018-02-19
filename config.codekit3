@@ -56,6 +56,27 @@
 		"oAP": "\/Scheduler_files\/css",
 		"oF": 0
 		},
+	"\/Scheduler_files\/images\/header-bkg.jpg": {
+		"ft": 16384,
+		"iS": 141320,
+		"oA": 0,
+		"oAP": "\/Scheduler_files\/images\/header-bkg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/Scheduler_files\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 17233,
+		"oA": 0,
+		"oAP": "\/Scheduler_files\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/Scheduler_files\/layout.css": {
 		"aP": 1,
 		"bl": 0,

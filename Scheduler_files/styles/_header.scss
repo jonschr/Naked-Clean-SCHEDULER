@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Site header
+   ========================================================================== */
+
+.site-header {
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+
+    a.header-logo {
+        width: 273px;
+        height: 51px;
+        background-image: url("../images/logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain !important;
+        display: inline-block;
+    }
+}
+
+/* ==========================================================================
+   Header text
+   ========================================================================== */
+
+.header-text {
+    background-image: url("../images/header-bkg.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    padding: 170px 0;
+
+    * {
+        color: white;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+        z-index: 5;
+    }
+
+    .wrap {
+        position: relative;
+        z-index: 10;
+    }
+
+    h1 {
+        font-weight: 100;
+        margin-bottom: 15px;
+        font-family: 'Source Sans Pro';
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+}

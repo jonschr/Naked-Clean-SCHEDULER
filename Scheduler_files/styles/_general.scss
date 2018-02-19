@@ -3,12 +3,18 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+.wrap {
+    width: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
 /* ==========================================================================
    Main wrapper
    ========================================================================== */
 
 #main-area {
-    padding: 20px 0;
+    padding: 50px 0;
 
     > .container {
         max-width: 935px;

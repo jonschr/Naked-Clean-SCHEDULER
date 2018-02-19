@@ -8,6 +8,12 @@ There's a [new version of scheduler-style.css](https://github.com/redblueconcept
 ## Add the images in the /images directory to *your* /images directory
 This includes the logo for display at the top of the page, along with the header background image.
 
+## Add the Source Sans font
+Somewhere in the <head> section, please add this:
+```html
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">	
+```
+
 ## Add the header markup
 This can be added just inside the opening <body> tag, if you like.
 

@@ -82,3 +82,12 @@ I'm not sure what all you're able to edit in here, but as is, there's not a sing
 		{{{ THE CONTENT OF THE POPUP GOES HERE, IDEALLY WITH PARAGRAPHS WRAPPED WITH <p> TAGS }}}
 	</div>
 </div>
+
+## Update the interactive functionality to pull in actual dates
+(You know about this one already, I'm just noting it here)
+
+## Update the images for the "type of cleaning you're interested in"
+(You know about this one already, I'm just noting it here); the images aren't showing up there
+
+## Remove the "go back" button
+(You know about this one already, I'm just noting it here)

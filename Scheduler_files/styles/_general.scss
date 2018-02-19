@@ -102,9 +102,17 @@ form fieldset {
    ========================================================================== */
 
 .main_left {
-    display: inline-block;
+    float: left;
     width: 48%;
     margin-right: 3%;
+
+    // margin-bottom: 15px;
+
+    &:last-of-type,
+    &:nth-last-child(2) {
+        // margin-bottom: 10px;
+   
+    }
 
     @include mobile {
         display: block;
@@ -114,14 +122,29 @@ form fieldset {
 }
 
 .main_right {
-    display: inline-block;
+    float: right;
     width: 48%;
     margin-left: auto;
+
+    // margin-bottom: 15px;
+
+    &:last-of-type,
+    &:nth-last-child(2) {
+        // margin-bottom: 10px;
+   
+    }
 
     @include mobile {
         display: block;
         width: 100%;
         margin: 0;
+    }
+}
+
+.main_left,
+.main_right {
+    select {
+        margin-bottom: 15px;
     }
 }
 
@@ -146,6 +169,14 @@ input {
     width: 100% !important;
     font-size: 16px;
     display: block;
+    outline: none !important;
+    transition: .5s all ease;
+
+    &:active,
+    &:focus {
+        background: $blue1;
+        border-color: $blue2;
+    }
 }
 
 select {
@@ -154,6 +185,7 @@ select {
     font-weight: 300;
     color: #3a3c41;
     width: 100% !important;
+    outline: none !important;
 
     &.autowidth {
         width: auto !important;
@@ -181,16 +213,49 @@ input.cleanTypeBtn {
     margin-right: 4px;
     transition: .5s all;
     border: none;
-
-    // width: 100% !important;
-    // max-width: 84px;
+    background-size: contain;
+    background-position: center center;
     width: 84px !important;
     border-radius: 3px;
     cursor: pointer;
 
-    &.extra_selected,
-    &.cleanType_selected,
     &:hover {
         background-color: $blue3;
     }
+
+    &.extra_selected,
+    &.cleanType_selected {
+        background-color: $blue4 !important;
+    }
+}
+
+/* ==========================================================================
+   Submit inputs
+   ========================================================================== */
+
+input[type="submit"] {
+    border: 1px solid #c6c6c7;
+    background: white;
+    transition: .5s all;
+    border-radius: 3px;
+
+    &:hover {
+        background: $blue4;
+        color: white;
+        border-color: $blue4;
+    }
+}
+
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+
+#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnYesPanel {
+    width: 48%;
+    float: left;
+}
+
+#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnNoPanel {
+    width: 48%;
+    float: right;
 }

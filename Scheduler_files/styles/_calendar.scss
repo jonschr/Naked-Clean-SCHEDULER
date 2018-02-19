@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Calendar styles
+   ========================================================================== */
+
+/* Defaults
+   ========================================================================== */
+
+body {
+    #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
+        .rcMain {
+            border: 1px solid $blue3;
+        }
+    }
+}
+
+.landing_left {
+    float: left;
+    width: 50%;
+}
+
+.landing_right {
+    float: right;
+    width: 50%;
+
+    #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rgSlots_GridData {
+        height: 274px !important;
+    }
+
+    #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rgSlots {
+        border: none;
+    }
+}
+
+/* Header
+   ========================================================================== */
+
+body {
+    #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
+        .rcTitlebar {
+            background: transparent !important;
+            border: none;
+
+            .rcTitle {
+                // // color: white;
+                // text-transform: uppercase;
+                // letter-spacing: 1px;
+                // font-size: 13px;
+           
+            }
+        }
+    }
+}
+
+/* Weeks
+   ========================================================================== */
+
+body {
+    #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
+        .rcWeek {
+            background: $blue3;
+            color: white;
+
+            th {
+                border: none;
+                text-align: center;
+                padding: 1px;
+                color: white;
+            }
+        }
+    }
+}
+
+/* Days
+   ========================================================================== */
+
+body {
+    #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
+        .rcRow td {
+            text-align: center !important;
+            padding: 0 !important;
+            border: none !important;
+            transition: .5s all;
+            background: $blue3;
+            height: 30px;
+
+            a {
+                padding: 0;
+                margin: 0;
+                transition: .5s all;
+                color: white;
+            }
+
+            &.rcOtherMonth,
+            &.rcOtherMonth .rcHover {
+                background: $blue1 !important;
+
+                a {
+                    color: $blue3 !important;
+                }
+            }
+
+            &.Disabled {
+                background: $blue2;
+
+                a {
+                    color: $blue3;
+                }
+            }
+
+            &.rcHover {
+                background: $blue4;
+                border: none;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}

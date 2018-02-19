@@ -7,8 +7,15 @@
 		"uuidString": "39B26ABC-DCC5-48AC-A66D-DE9CDB3C930E"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26268",
 "files": {
+	"\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -161,6 +168,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/Scheduler_files\/styles\/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scheduler_files\/css\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/Scheduler_files\/styles\/_reset.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -284,6 +304,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -847,6 +868,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -1666,7 +1691,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "https:\/\/naked-clean.dev",
+	"externalServerAddress": "http:\/\/naked-clean.dev",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2250,7 +2275,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
+	"overrideExternalServerCSS": 1,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

@@ -1,7 +1,7 @@
 #sidebar {
     background: white;
     border-radius: 3px;
-    padding: 25px 0;
+    padding: 35px 0;
 
     .widget {
         text-align: center;
@@ -20,14 +20,17 @@
             text-transform: uppercase;
             color: #3a3c41;
             margin-bottom: 13px;
+            padding: 0;
+            margin: 0 0 10px;
         }
 
         p {
             color: rgb(133, 135, 140);
             display: block;
             font-family: "Source Sans Pro", sans-serif;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 25px;
+            line-height: 1.3em;
         }
     }
 }

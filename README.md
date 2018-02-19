@@ -9,7 +9,7 @@ There's a [new version of scheduler-style.css](https://github.com/redblueconcept
 This includes the logo for display at the top of the page, along with the header background image.
 
 ## Add the Source Sans font
-Somewhere in the <head> section, please add this:
+Somewhere in the head section, please add this:
 ```html
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">	
 ```
@@ -64,7 +64,7 @@ This goes just after the close of the main_outer div
 
 ## Add the mobile-friendly meta tag 
 
-Should be added somewhere in the <head> section of the site
+Should be added somewhere in the head section of the site
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">

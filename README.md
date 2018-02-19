@@ -62,7 +62,9 @@ This goes just after the close of the main_outer div
 </div> <!-- #sidebar -->
 ```
 
-## Add the mobile-friendly meta tag somewhere in the <head> section of the site
+## Add the mobile-friendly meta tag 
+
+Should be added somewhere in the <head> section of the site
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">

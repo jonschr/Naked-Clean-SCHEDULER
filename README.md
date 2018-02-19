@@ -5,6 +5,9 @@ This is a punchlist of the things that I see that need changed in terms of marku
 ## Update the main stylesheet
 There's a new version to replace the current one.
 
+## Add the images in the /images directory to *your* /images directory
+This includes the logo for display at the top of the page, along with the header background image.
+
 ## Add the header markup
 This can be added just inside the opening <body> tag, if you like.
 

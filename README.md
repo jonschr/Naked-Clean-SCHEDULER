@@ -2,6 +2,23 @@
 
 This is a punchlist of the things that I see that need changed in terms of markup. Should be a quicker list than last time.
 
+## Add the header markup
+This can be added just inside the opening <body> tag, if you like.
+
+```html
+<div class="site-header">
+	<div class="wrap">
+	    <a href="https://naked-clean.com/" target="_blank" class="header-logo"></a>
+	</div>
+</div>
+<div class="header-text">
+	<div class="wrap">
+	    <h1>This is a heading</h1>
+	    <p>Dave will have real content for this later. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+	</div>
+</div>
+```
+
 ## Add the sidebar markup
 
 ```html
@@ -38,6 +55,16 @@ This is a punchlist of the things that I see that need changed in terms of marku
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+## Update the markup of the unavailable/available legend just above the calendar
+Here's what it should probably look like (please note that this is considerably simpler than what's there now:
+
+```html
+<div class="form-group availability">
+	<span class="color-box-unavailable">Unavailable Date</span>
+	<span class="color-box-available">Available Date</span>
+</div>
 ```
 
 # Version 1 notes

@@ -3,7 +3,7 @@
 This is a punchlist of the things that I see that need changed in terms of markup. Should be a quicker list than last time.
 
 ## Update the main stylesheet
-There's a new version to replace the current one.
+There's a [new version of scheduler-style.css](https://github.com/redblueconcepts/Naked-Clean-SCHEDULER/blob/master/Scheduler_files/styles/scheduler-style.css) to replace the current one.
 
 ## Add the images in the /images directory to *your* /images directory
 This includes the logo for display at the top of the page, along with the header background image.
@@ -85,6 +85,7 @@ I'm not sure what all you're able to edit in here, but as is, there's not a sing
 		{{{ THE CONTENT OF THE POPUP GOES HERE, IDEALLY WITH PARAGRAPHS WRAPPED WITH <p> TAGS }}}
 	</div>
 </div>
+```
 
 ## Update the interactive functionality to pull in actual dates
 (You know about this one already, I'm just noting it here)

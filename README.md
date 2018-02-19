@@ -20,9 +20,8 @@ This can be added just inside the opening <body> tag, if you like.
 ```
 
 ## Add the sidebar markup
-
+This goes just after the close of the main_outer div
 ```html
-<!-- NOTE TO TAMMY: ADD THIS SIDEBAR DIV WITH EVERYTHING INSIDE IT TO THE LAYOUT JUST AFTER THE CLOSE OF THE MAIN_OUTER DIV -->
 <div id="sidebar">
     <div class="widget ">
 	<h3 class="widget-title ">Local Reputation</h3>
@@ -67,49 +66,12 @@ Here's what it should probably look like (please note that this is considerably 
 </div>
 ```
 
-# Version 1 notes
-Tammy, I'm trying to keep these things as simple as possible. Hopefully they won't be too too tricky, but there are going to be some html changes needed.
-
-## CSS
-You should be able to just include the scheduler-style.css file from this repo, and that'll include all of the styles. It's precompressed and all of that; the source SASS files are here too, but this is really the only file you actually need.
+## Clean up the "cap hours" markup
+I'm not sure what all you're able to edit in here, but as is, there's not a single wrapper that all of the "cap hours" popup content goes into. That's a problem if we're wanting to make this into a popup. Even if we aren't, it's really inconsistent right now. The content of this is being parsed out into a bunch of different divs. If you wrap the whole thing (just the stuff that we want in the popup with something like this, that would be helpful:
 
 ```html
-<link rel="stylesheet" href="../yourpath/scheduler-style.css">
-```
-
-## HTML
-
-There are a number of minor HTML changes that will be needed to make everything look the way it does on the sample site. Essentially, I've tried to break it down into small tasks.
-
-### Drop labels, use placeholders instead
-
-Basically what it sounds like – instead of using the labels (or divs with a **form-label** class) for inputs, we'll want to use placeholders instead. If these aren't familiar to you, you should be able to see how it works on the sample site. Basically it's just this:
-
-```html
-<input placeholder="This is a placeholder"/>
-```
-### Section headings
-
-Put section headings on the _inside_ of each fieldset instead of the outside, and wrap each one with an h2 tag instead of the current div class of form-main.
-
-So it should look something like this in terms of structure:
-
-```html
-<fieldset>
-	<div class="intro">
-		<h2>This is a heading</h2>
-		<p>Subheading type thing if necessary</p>
+<div class="cap-hours-popup-wrapper">
+	<div class="cap-hours-popup">
+		{{{ THE CONTENT OF THE POPUP GOES HERE, IDEALLY WITH PARAGRAPHS WRAPPED WITH <p> TAGS }}}
 	</div>
-	
-	{{{ all of the fields from this section }}}
-
-</fieldset>
-```
-
-### Minor adjustments
-
-These are just a few bullet points of some really specific things:
-- There are a few <br> tags that need to be removed in the html; I don't think any of those will need to remain
-- The default width for select boxes is 100%, but a few of them should be thin (e.g. the selection for the number of rooms and the selection for the expiration date). If you add a class of "autowidth" to those select fields, they'll act appropriately.
-- On the wrapper around the CVV entry (it has width:150px;float:left; on there already), add "margin-right: 15px;"
-
+</div>

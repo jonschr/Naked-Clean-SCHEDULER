@@ -2,9 +2,9 @@
 
 This is a punchlist of the things that I see that need changed in terms of markup. Should be a quicker list than last time.
 
-- Add the sidebar markup
+## Add the sidebar markup
 
-```
+```html
 <!-- NOTE TO TAMMY: ADD THIS SIDEBAR DIV WITH EVERYTHING INSIDE IT TO THE LAYOUT JUST AFTER THE CLOSE OF THE MAIN_OUTER DIV -->
 <div id="sidebar">
     <div class="widget ">
@@ -32,10 +32,11 @@ This is a punchlist of the things that I see that need changed in terms of marku
 	<p>We back the maids’ work with a 100% Satisfaction Guarantee.</p>
     </div>
 </div> <!-- #sidebar -->
-			```
-- Add a mobile-friendly meta tag in the <head> area:
-
 ```
+
+## Add the mobile-friendly meta tag somewhere in the <head> section of the site
+
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 

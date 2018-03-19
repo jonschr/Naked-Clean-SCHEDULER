@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Wrapper 
+   ========================================================================== */
+
+.modalDialog {
+    display: block;
+    background: rgba(darken($blue4, 10%), 0.9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
+/* ==========================================================================
+   Inner
+   ========================================================================== */
+
+.modalLevel1 {
+    background: white;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 3px;
+
+    p {
+        color: $dark4;
+        margin-bottom: 10px;
+    }
+
+    br {
+        display: none !important;
+    }
+}
+
+/* ==========================================================================
+   After
+   ========================================================================== */
+
+.capHours {
+    font-size: 16px !important;
+    line-height: 1.3em !important;
+    color: $dark4 !important;
+}
+
+.upCapHoursDesc {
+    background: $blue4;
+    padding: 10px 20px 20px;
+    border-radius: 3px;
+    margin-top: 10px;
+
+    .cap-hours-popup-wrapper {
+        @extend .capHours;
+
+        color: white !important;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 100% !important;
+        background-color: white !important;
+        min-height: 120px;
+        border: none;
+        border-radius: 3px;
+        padding: 15px;
+        font-size: 15px;
+        outline: none;
+        line-height: 1.3em;
+        color: $dark4;
+    }
+}

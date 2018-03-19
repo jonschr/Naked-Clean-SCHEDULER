@@ -26,18 +26,52 @@ body {
     float: right;
     width: 50%;
 
+    br {
+        display: none !important;
+    }
+
     @include mobile {
         width: 100%;
     }
 
 
+    hr {
+        display: none !important;
+    }
+
     #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rgSlots_GridData {
-        height: 274px !important;
+        height: auto !important;
     }
 
     #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rgSlots {
         border: none;
+        outline: none !important;
     }
+}
+
+/* The selection
+   ========================================================================== */
+
+body .RadGrid_Default .rgAltRow {
+    background: $blue2;
+    color: $blue4;
+    transition: .3s all ease;
+}
+
+body .RadGrid_Default .rgSelectedRow,
+body .RadGrid_Default .rgAltRow:hover {
+    background: $blue4;
+    color: white;
+}
+
+body .RadGrid_Default .rgSelectedRow td,
+body .RadGrid_Default .rgSelectedRow td.rgSorted {
+    border: none !important;
+}
+
+body .rgMasterTable {
+    width: 100% !important;
+    margin-bottom: 10px;
 }
 
 /* Header
@@ -99,16 +133,19 @@ body {
                 color: white;
             }
 
-            &.rcOtherMonth,
-            &.rcOtherMonth .rcHover {
-                background: $blue1 !important;
+            // &.rcOtherMonth,
+            // &.rcOtherMonth .rcHover {
+            //     background: $blue1 !important;
 
-                a {
-                    color: $blue3 !important;
-                }
-            }
+            //     a {
+            //         color: $blue3 !important;
+            //     }
+            // }
 
-            &.Disabled {
+            &[disabled="disabled"],
+            &[disabled="disabled"]:hover,
+            &[disabled="disabled"].rcHover,
+            &[disabled="disabled"]:hover.rcHover {
                 background: $blue2;
 
                 a {
@@ -116,7 +153,8 @@ body {
                 }
             }
 
-            &.rcHover {
+            &.rcHover,
+            &.rcSelected {
                 background: $blue4;
                 border: none;
 
@@ -125,5 +163,24 @@ body {
                 }
             }
         }
+    }
+
+    span.color-box-unavailable,
+    span.color-box-available {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+
+    span.color-box-unavailable {
+        background: $blue2;
+        color: $blue3;
+    }
+
+    span.color-box-available {
+        background: $blue3;
+        color: white;
     }
 }

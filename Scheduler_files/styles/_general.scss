@@ -59,6 +59,17 @@ body {
 }
 
 /* ==========================================================================
+   Tables
+   ========================================================================== */
+
+.form-group > table td,
+.form-group > table th {
+    @include mobile {
+        display: inline-block !important;
+    }
+}
+
+/* ==========================================================================
    Form wrappers
    ========================================================================== */
 
@@ -171,6 +182,12 @@ form fieldset {
     select {
         margin-bottom: 15px;
     }
+
+    @include mobile {
+        float: none;
+        margin-right: 0;
+        width: auto !important;
+    }
 }
 
 /* ==========================================================================
@@ -215,6 +232,10 @@ select {
     &.autowidth {
         width: auto !important;
     }
+
+    @include mobile {
+        width: auto !important;
+    }
 }
 
 /* ==========================================================================
@@ -251,6 +272,10 @@ input.cleanTypeBtn {
     &.extra_selected,
     &.cleanType_selected {
         background-color: $blue4 !important;
+    }
+
+    @include mobile {
+        margin-bottom: 4px;
     }
 }
 

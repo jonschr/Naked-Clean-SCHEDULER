@@ -16,11 +16,20 @@ body {
 .landing_left {
     float: left;
     width: 50%;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .landing_right {
     float: right;
     width: 50%;
+
+    @include mobile {
+        width: 100%;
+    }
+
 
     #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rgSlots_GridData {
         height: 274px !important;

@@ -150,6 +150,19 @@
 		"oAP": "\/Scheduler_files\/ScriptResource.axd",
 		"oF": 0
 		},
+	"\/Scheduler_files\/styles\/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scheduler_files\/css\/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/Scheduler_files\/styles\/_calendar.scss": {
 		"aP": 0,
 		"bl": 0,

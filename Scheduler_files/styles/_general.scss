@@ -102,20 +102,21 @@ form {
 
 form fieldset {
     h2 {
-        color: rgb(58, 60, 65);
+        color: $black;
         display: block;
         font-size: 22px;
         font-weight: 300;
         line-height: 24.9999px;
-        color: black;
+        color: $black;
     }
 
     p,
     .form-label,
     .capHours {
-        color: rgb(171, 171, 171);
+        // color: rgb(171, 171, 171);
+        color: rgba($black, 0.7);
         display: block;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 19.4445px;
     }
 
@@ -125,7 +126,9 @@ form fieldset {
 
     .form-label {
         margin-bottom: 5px;
-        color: rgb(58, 60, 65);
+
+        // color: rgb(58, 60, 65);
+        color: $black;
     }
 
     .form-group {

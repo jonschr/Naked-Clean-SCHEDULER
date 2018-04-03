@@ -14,7 +14,10 @@ $dark1: #d2d6d6;
 $dark2: #70767c;
 $dark3: #555c63;
 $dark4: #3c434a;
-$highlight: #9add8a;
+$black: rgb(50, 50, 50);
+
+// $highlight: #9add8a;
+$highlight: #ff684c;
 
 $light: $blue1;
 $primary: $blue3;
@@ -67,3 +70,4 @@ $desktop-width-section: 1200px;
 @import "calendar";
 @import "sidebar";
 @import "popup";
+@import "buttons";

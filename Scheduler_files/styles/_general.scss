@@ -64,9 +64,15 @@ body {
 
 .form-group > table td,
 .form-group > table th {
-    @include mobile {
-        display: inline-block !important;
-    }
+    // @include mobile {
+    display: inline-block !important;
+
+    // }
+}
+
+table {
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 /* ==========================================================================
@@ -257,29 +263,98 @@ select {
 
 input.extraBtn,
 input.cleanTypeBtn {
-    background-color: $blue2;
-    border: 1px solid $blue3;
-    margin-right: 4px;
+    background-color: white;
+    border: 10px solid white !important;
+    box-shadow: 0 0 0 1px $dark1;
+    margin-right: 10px;
     transition: .5s all;
     border: none;
     background-size: contain;
     background-position: center center;
-    width: 84px !important;
+    width: 162px !important;
+    height: 85px !important;
     border-radius: 3px;
     cursor: pointer;
+    transition: .5s all;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        width: 115px !important;
+        height: 65px !important;
+    }
+
 
     &:hover {
-        background-color: $blue3;
+        background-color: $highlight;
+        border-color: $highlight !important;
     }
 
     &.extra_selected,
     &.cleanType_selected {
         background-color: $blue4 !important;
+        border-color: $blue4 !important;
     }
+}
 
-    @include mobile {
-        margin-bottom: 4px;
-    }
+/* Temp images
+   ========================================================================== */
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnCleanOne {
+    background-image: url(../images/clean.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnCleanMoveIn {
+    background-image: url(../images/movein.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnCleanMoveOut {
+    background-image: url(../images/moveout.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnExtra1 {
+    background-image: url(../images/fridge.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnExtra2 {
+    background-image: url(../images/oven.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnExtra3 {
+    background-image: url(../images/cabinets.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnExtra4 {
+    background-image: url(../images/windows.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnExtra5 {
+    background-image: url(../images/baseboards.svg) !important;
+}
+
+input#ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_btnExtra6 {
+    background-image: url(../images/blinds.svg) !important;
+}
+
+/* Words below
+   ========================================================================== */
+
+span.cleanTypeBtnLBL,
+span.extraBtnLBL {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    width: auto;
+    color: rgba($black, 0.7);
+    padding: 5px 10px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+span.cleanType_selectedLBL,
+span.extra_selectedLBL {
+    color: $black;
 }
 
 /* ==========================================================================

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>baseboards</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="baseboards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M268.481481,139.75 C268.481481,122.90925 261.546222,111.3985 251.245926,104.531 L268.481481,27 L247.962963,27 L217.964889,96.9255 C214.281815,97.22275 210.588481,97.83775 206.925926,98.75 C206.925926,98.75 191.998704,103.06525 177.389519,119.414 L268.522519,142.169 C268.522519,141.3285 268.481481,140.5905 268.481481,139.75 Z" id="Shape" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <path d="M268.64563,152.7675 L170.464519,128.23925 C166.97637,133.2925 163.693407,139.20675 160.769519,146.0025 L269.312481,173.124 C268.984185,166.73825 268.779,159.89125 268.64563,152.7675 Z" id="Shape" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <path d="M176.148148,211.5 C176.148148,211.5 171.018519,243.89 159.794889,256.9895 C192.337259,266.9115 231.035185,273 289,273 C289,273 274.637037,251.2085 269.958815,183.83525 L157.127481,155.658 C156.624778,157.18525 156.081037,158.64075 155.62963,160.25 C141.040963,211.28475 73.5555556,211.5 73.5555556,211.5 C73.5555556,211.5 90.1447778,231.33375 134.505815,248.47175 C144.426519,243.7465 169.592481,224.5995 176.148148,211.5 Z" id="Shape" fill="#DEDEDE" fill-rule="nonzero"></path>
+        <ellipse id="Oval" fill="#DEDEDE" fill-rule="nonzero" cx="32.5185185" cy="139.75" rx="20.5185185" ry="20.5"></ellipse>
+        <ellipse id="Oval" fill="#DEDEDE" fill-rule="nonzero" cx="47.9074074" cy="196.125" rx="15.3888889" ry="15.375"></ellipse>
+        <ellipse id="Oval" fill="#DEDEDE" fill-rule="nonzero" cx="78.6851852" cy="155.125" rx="15.3888889" ry="15.375"></ellipse>
+    </g>
+</svg>

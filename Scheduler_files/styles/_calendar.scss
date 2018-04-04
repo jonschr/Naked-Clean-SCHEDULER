@@ -5,10 +5,21 @@
 /* Defaults
    ========================================================================== */
 
+table.RadCalendar_Default {
+    margin: 0;
+    padding: 0;
+
+    table {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 body {
     #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
         .rcMain {
-            border: 1px solid $blue3;
+            border: 1px solid $dark1;
+            border-top: none;
         }
     }
 }
@@ -52,22 +63,55 @@ body {
 /* The selection
    ========================================================================== */
 
-body .RadGrid_Default .rgAltRow {
-    background: $blue2;
-    color: $blue4;
-    transition: .3s all ease;
+.rgMasterTable {
+    .rgRow,
+    .rgAltRow {
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        td {
+            padding: 0;
+            background: transparent;
+            border: none;
+        }
+
+        span {
+            border: 1px solid $dark1;
+            padding: 7px 15px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            display: block;
+            color: $black;
+            transition: .5s all ease;
+            cursor: pointer;
+        }
+
+        &.rgSelectedRow span,
+        span:hover {
+            background: $blue4;
+            color: white;
+            border-color: $blue4;
+        }
+    }
 }
 
-body .RadGrid_Default .rgSelectedRow,
-body .RadGrid_Default .rgAltRow:hover {
-    background: $blue4;
-    color: white;
-}
+// body .RadGrid_Default .rgAltRow {
+//     background: $blue2;
+//     color: $blue4;
+//     transition: .3s all ease;
+// }
 
-body .RadGrid_Default .rgSelectedRow td,
-body .RadGrid_Default .rgSelectedRow td.rgSorted {
-    border: none !important;
-}
+// body .RadGrid_Default .rgSelectedRow span,
+// body .RadGrid_Default .rgAltRow:hover span {
+//     background: $blue4;
+//     color: white;
+// }
+
+// body .RadGrid_Default .rgSelectedRow td,
+// body .RadGrid_Default .rgSelectedRow td.rgSorted {
+//     border: none !important;
+// }
 
 body .rgMasterTable {
     width: 100% !important;
@@ -128,14 +172,15 @@ body a.rcNext {
 body {
     #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
         .rcWeek {
-            background: white;
+            background: #eeeeee;
             color: $black;
+            font-weight: bold !important;
 
             th {
                 border: none;
                 text-align: center;
-                padding: 1px;
-                color: white;
+                padding: 8px 0;
+                color: $black;
             }
         }
     }
@@ -146,48 +191,88 @@ body {
 
 body {
     #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_rcCalendar {
-        .rcRow td {
-            text-align: center !important;
-            padding: 15px !important;
-            border: none !important;
-            transition: .5s all;
-            background: $blue3;
-            height: 30px;
-
-            a {
-                padding: 0;
-                margin: 0;
-                transition: .5s all;
-                color: white;
-            }
-
-            // &.rcOtherMonth,
-            // &.rcOtherMonth .rcHover {
-            //     background: $blue1 !important;
-
-            //     a {
-            //         color: $blue3 !important;
-            //     }
-            // }
-
-            &[disabled="disabled"],
-            &[disabled="disabled"]:hover,
-            &[disabled="disabled"].rcHover,
-            &[disabled="disabled"]:hover.rcHover {
-                background: $blue2;
-
-                a {
-                    color: $blue3;
+        .rcRow {
+            &:first-of-type {
+                td {
+                    padding-top: 10px !important;
                 }
             }
 
-            &.rcHover,
-            &.rcSelected {
-                background: $blue4;
-                border: none;
+            &:last-of-type {
+                td {
+                    padding-bottom: 10px !important;
+                }
+            }
+
+            td {
+                text-align: center !important;
+                padding: 5px !important;
+                border: none !important;
+                transition: .5s all;
+                height: 30px;
+                background: white !important;
+
+                @include mobile {
+                    padding: 1px !important;
+                }
+
+
+                &:first-of-type {
+                    padding-left: 10px !important;
+                }
+
+                &:last-of-type {
+                    padding-right: 10px !important;
+                }
 
                 a {
-                    color: white;
+                    padding: 6px 8px;
+                    margin: 0;
+                    transition: .5s all;
+                    color: $black;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border: 1px solid $dark1;
+
+                    @include mobile {
+                        font-size: 13px;
+                        padding: 4px 6px;
+                    }
+                }
+
+                // &.rcOtherMonth,
+                // &.rcOtherMonth .rcHover {
+                //     background: $blue1 !important;
+
+                //     a {
+                //         color: $blue3 !important;
+                //     }
+                // }
+
+                &.Disabled {
+                    a {
+                        background: $dark1 !important;
+                        color: $dark2 !important;
+                    }
+                }
+
+                &.rcHover,
+                &.rcSelected {
+                    a {
+                        border-color: $highlight;
+                        background: $highlight !important;
+                        color: white;
+                    }
+                }
+            }
+
+            td.rcOtherMonth {
+                opacity: 0.4 !important;
+                background: white !important;
+                color: $black !important;
+
+                a {
+                    border-color: transparent !important;
                 }
             }
         }
@@ -197,18 +282,23 @@ body {
     span.color-box-available {
         display: inline-block;
         text-transform: uppercase;
+        letter-spacing: 0;
         font-size: 14px;
         font-weight: bold;
-        padding: 2px 5px;
+        padding: 7px 10px;
+        border: 1px solid $dark1;
     }
 
     span.color-box-unavailable {
-        background: $blue2;
-        color: $blue3;
+        background: $dark1;
+        color: $dark2;
+        border-color: $dark1;
+        margin-right: 5px;
     }
 
     span.color-box-available {
-        background: $blue3;
-        color: white;
+        background: white;
+        color: $black;
+        border-color: $dark1;
     }
 }

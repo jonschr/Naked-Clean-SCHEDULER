@@ -64,19 +64,62 @@
         font-family: 'Source Sans Pro';
         font-size: 38px;
 
+        strong {
+            font-weight: bold;
+        }
+
         @include mobile {
-            font-size: 20px;
+            font-size: 28px;
             font-weight: bold;
         }
     }
 
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+    }
+
     p {
-        font-size: 18px;
+        font-size: 22px;
         line-height: 1.4em;
+        font-weight: bold;
 
         @include mobile {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: normal;
+            line-height: 1.2em;
+        }
+    }
+
+    img.icon {
+        height: 75px;
+        width: auto !important;
+        margin-bottom: 15px;
+
+        @include mobile {
+            height: 50px;
+        }
+    }
+
+    .columns {
+        display: flex;
+
+        &.padding-top {
+            padding-top: 25px;
+        }
+
+        .column {
+            text-align: center;
+        }
+    }
+
+    .columns-3 {
+        flex-flow: row wrap;
+
+        .column {
+            width: 30%;
+            margin: 1.5%;
         }
     }
 }

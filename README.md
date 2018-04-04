@@ -36,4 +36,5 @@ There are new icons for the header area, new icons for the clean selection, and 
 
 Once these are copied over, you'll probably want to go ahead and put those into place by replacing the current images where they appear in the markup in those three locations (header, cleaning selection, and addons).
 
- 
+## Add appropriate wording to the addon options (replacing "words")
+Basically these need to just say: fridge, oven, cabinets, windows, baseboards, blinds

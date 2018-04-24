@@ -7,7 +7,7 @@
 		"uuidString": "39B26ABC-DCC5-48AC-A66D-DE9CDB3C930E"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/README.html": {
 		"cB": 0,
@@ -139,6 +139,7 @@
 	"\/Scheduler_files\/images\/header-bkg.jpg": {
 		"ft": 16384,
 		"iS": 141320,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/Scheduler_files\/images\/header-bkg.jpg",
 		"oF": 0,
@@ -206,6 +207,13 @@
 		"oAP": "\/Scheduler_files\/layout-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/Scheduler_files\/NC_CostServices.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/Scheduler_files\/NC_CostServices.xml",
+		"oF": 0
 		},
 	"\/Scheduler_files\/ScriptResource(1).axd": {
 		"cB": 0,
@@ -374,6 +382,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/Scheduler_files\/styles\/_summary.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scheduler_files\/css\/_summary.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/Scheduler_files\/styles\/scheduler-style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -463,7 +484,8 @@
 	"creationDate": 534988835,
 	"displayValue": "Naked-Clean-SCHEDULER",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-ceiling"
+	"iconImageName": "meme-ceiling",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2266,6 +2288,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

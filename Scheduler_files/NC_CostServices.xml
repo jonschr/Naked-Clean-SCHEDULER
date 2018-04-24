@@ -1,0 +1,105 @@
+<NakedClean_CostServices>
+	<roomcosts>	
+		<cleantype id="btnCleanOne" name="One-Claan" cost="35.0" image="images/one-clean.png"  />
+		<cleantype id="btnCleanMoveIn" name="One-Clean - Move-in" cost="37.0" image="images/move-in.png" />
+		<cleantype id="btnCleanMoveOut" name="One-Clean - Move-Out" cost="39.0" image="images/move-out.png" />
+		
+		<roomcost beds="0" baths="1" time="3"/>
+		<roomcost beds="0" baths="2" time="3"/>
+		<roomcost beds="0" baths="3" time="3"/>
+		<roomcost beds="0" baths="4" time="3.5"/>
+		<roomcost beds="0" baths="5+" time="4.0"/>
+
+		<roomcost beds="1" baths="0" time="3"/> 
+		<roomcost beds="1" baths="1" time="3"/>
+		<roomcost beds="1" baths="2" time="4"/>
+		<roomcost beds="1" baths="3" time="5"/>
+		<roomcost beds="1" baths="4" time="6"/>
+		<roomcost beds="1" baths="5+" time="7"/>
+
+		<roomcost beds="2" baths="0" time="3"/> 
+		<roomcost beds="2" baths="1" time="3.5"/>
+		<roomcost beds="2" baths="2" time="4.5"/>
+		<roomcost beds="2" baths="3" time="5.5"/>
+		<roomcost beds="2" baths="4" time="6.6"/>
+		<roomcost beds="2" baths="5+" time="7.5"/>
+
+		<roomcost beds="3" baths="0" time="3"/> 
+		<roomcost beds="3" baths="1" time="4"/>
+		<roomcost beds="3" baths="2" time="5"/>
+		<roomcost beds="3" baths="3" time="6"/>
+		<roomcost beds="3" baths="4" time="7"/>
+		<roomcost beds="3" baths="5+" time="8"/>
+
+		<roomcost beds="4" baths="0" time="3.5"/> 
+		<roomcost beds="4" baths="1" time="4.5"/>
+		<roomcost beds="4" baths="2" time="5.5"/>
+		<roomcost beds="4" baths="3" time="6.5"/>
+		<roomcost beds="4" baths="4" time="7.5"/>
+		<roomcost beds="4" baths="5+" time="8.5"/>
+
+		<roomcost beds="5+" baths="0" time="4"/> 
+		<roomcost beds="5+" baths="1" time="5"/>
+		<roomcost beds="5+" baths="2" time="6"/>
+		<roomcost beds="5+" baths="3" time="7"/>
+		<roomcost beds="5+" baths="4" time="8"/>
+		<roomcost beds="5+" baths="5+" time="9"/>
+	</roomcosts>
+	<extras>
+	  <extra id="btnExtra1" row="1" name="Inside Refrigerator" time="1.0" image="images/1_Inside-Fridge.png"/>
+	  <extra id="btnExtra2" row="1" name="Inside Oven" time="1.0" image="images/2_Inside-Oven.png"/>
+	  <extra id="btnExtra3" row="1" name="Inside Cabinets" time="1.0" image="images/3_Inside-Cabinets.png"/>
+	  <extra id="btnExtra4" row="1" name="Interiors Windows" time="1.0" image="images/4_Interior-Windows.png"/>
+	  <extra id="btnExtra5" row="1" name="Baseboards" time="1.0" image="images/5_Baseboards.png"/>
+	  <extra id="btnExtra6" row="1" name="Blinds" time="1.0" image="images/6_Blinds.png"/>	
+	</extras>
+	<ZipCodesInRange_OneTime>
+		<zipcode>92007</zipcode>
+		<zipcode>92008</zipcode>
+		<zipcode>92009</zipcode>
+		<zipcode>92010</zipcode>
+		<zipcode>92011</zipcode>
+		<zipcode>92024</zipcode>
+		<zipcode>92054</zipcode>
+		<zipcode>92056</zipcode>
+		<zipcode>92057</zipcode>
+		<zipcode>92069</zipcode>
+		<zipcode>92078</zipcode>
+		<zipcode>92075</zipcode>
+		<zipcode>92081</zipcode>
+		<zipcode>92083</zipcode>
+		<zipcode>92084</zipcode>
+	</ZipCodesInRange_OneTime>
+	<ZipCodesInRange_Estimate>
+		<zipcode>92007</zipcode>
+		<zipcode>92008</zipcode>
+		<zipcode>92009</zipcode>
+		<zipcode>92010</zipcode>
+		<zipcode>92011</zipcode>
+		<zipcode>92024</zipcode>
+		<zipcode>92025</zipcode>
+		<zipcode>92026</zipcode>
+		<zipcode>92027</zipcode>
+		<zipcode>92029</zipcode>
+		<zipcode>92054</zipcode>
+		<zipcode>92056</zipcode>
+		<zipcode>92057</zipcode>
+		<zipcode>92064</zipcode>
+		<zipcode>92069</zipcode>
+		<zipcode>92078</zipcode>
+		<zipcode>92075</zipcode>
+		<zipcode>92081</zipcode>
+		<zipcode>92083</zipcode>
+		<zipcode>92084</zipcode>
+		<zipcode>92130</zipcode>
+		<zipcode>92117</zipcode>
+		<zipcode>92014</zipcode>
+		<zipcode>92037</zipcode>
+		<zipcode>92129</zipcode>
+		<zipcode>92127</zipcode>
+		<zipcode>92128</zipcode>
+		<zipcode>92121</zipcode>
+		<zipcode>92122</zipcode>
+		<zipcode>92106</zipcode>
+	</ZipCodesInRange_Estimate>
+</NakedClean_CostServices>

@@ -1,5 +1,43 @@
 .booking_summary_section {
-    div {
-        display: inline;
+    span.summary_row {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px !important;
+        color: rgba($black, 0.7);
+
+        div {
+            display: inline !important;
+        }
+
+        #ctl00_ctl00_cphContent_cphPgContent_QuoteControl1_lblPrice {
+            color: green !important;
+        }
+    }
+
+    .book_sum_total {
+        span.bksum6_total {
+            color: $black;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 24.9999px;
+        }
+
+        span.priceStyle {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 24.9999px;
+        }
+    }
+
+    .book_sum_subtotal {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #dedede;
+    }
+
+    .book_sum_discount {
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 }

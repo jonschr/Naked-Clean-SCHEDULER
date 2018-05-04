@@ -211,7 +211,8 @@ form fieldset {
    Field styles
    ========================================================================== */
 
-input {
+input,
+textarea {
     border: 1px solid #c6c6c7;
     padding: 0 15px;
     font-weight: 300;
@@ -228,6 +229,11 @@ input {
         background: $blue1;
         border-color: $blue2;
     }
+}
+
+textarea {
+    height: 150px;
+    padding-top: 15px;
 }
 
 select {

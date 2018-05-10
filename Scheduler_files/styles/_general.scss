@@ -411,3 +411,13 @@ input[type="submit"] {
     width: 48%;
     float: right;
 }
+
+/* ==========================================================================
+   Error
+   ========================================================================== */
+.errorClass {
+    padding: 10px;
+    color: darkred;
+    font-weight: bold;
+    font-size: large;
+}

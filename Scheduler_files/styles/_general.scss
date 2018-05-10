@@ -67,7 +67,16 @@ body {
     // @include mobile {
     display: inline-block !important;
 
+    // float: left !important;
+
     // }
+}
+
+.form-group > table tr {
+    max-width: 100% !important;
+    min-width: auto !important;
+    display: flex !important;
+    flex-flow: row wrap !important;
 }
 
 table {
@@ -83,6 +92,15 @@ form {
     fieldset {
         padding: 40px;
         border-bottom: 1px solid #dedede;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-width: auto !important;
+
+        > div {
+            max-width: 100%;
+            box-sizing: border-box;
+            min-width: auto !important;
+        }
 
         .intro {
             margin-bottom: 15px;

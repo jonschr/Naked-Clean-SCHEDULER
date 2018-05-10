@@ -96,6 +96,12 @@ body {
     }
 }
 
+body .RadGrid_Default .rgRow,
+body .RadGrid_Default .rgSelectedRow,
+body .RadGrid_Default .rgAltRow {
+    background: transparent !important;
+}
+
 // body .RadGrid_Default .rgAltRow {
 //     background: $blue2;
 //     color: $blue4;

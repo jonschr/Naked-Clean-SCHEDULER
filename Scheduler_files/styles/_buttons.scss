@@ -26,6 +26,14 @@ input[name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$btnGetMoreDates"] 
         background-color: darken($highlight, 10%);
         color: white;
     }
+
+    @include mobile {
+        text-align: center;
+        padding: 15px;
+        letter-spacing: 0;
+        font-size: 13px;
+        display: block;
+    }
 }
 
 body input[name="ctl00$ctl00$cphContent$cphPgContent$QuoteControl1$btnGetMoreDates"] {
